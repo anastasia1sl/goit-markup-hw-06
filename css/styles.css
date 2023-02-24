@@ -529,17 +529,21 @@ body {
 }
 
 .footer-sub-wrap {
-  display: block;
   margin-left: auto;
 }
 
-.footer-sub-button {
-  position: relative;
+.subscribe-form {
+  display: flex;
+}
 
-  display: inline-block;
+.footer-sub-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   width: 165px;
   height: 40px;
+
   background: var(--accent-color);
   border-radius: 4px;
   border-color: transparent;
@@ -549,22 +553,12 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-
-  padding-top: 8px;
-  padding-left: 24px;
-  padding-bottom: 8px;
-  padding-right: 64px;
-  margin-left: 24px;
   cursor: pointer;
 }
 
 .subscribe-icon {
-  position: absolute;
-  top: 50%;
-  right: 24px;
-  transform: translateY(-50%);
-
   fill: #ffffff;
+  margin-left: 16px;
 }
 
 .input-sub {
@@ -572,20 +566,19 @@ body {
   height: 40px;
   color: rgba(255, 255, 255, 0.6);
 
-  background-color: #2e2f42;
+  background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-}
-.sub-input-field input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.sub-input-field input {
+  margin-right: 24px;
   padding-left: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin: 0;
+}
+.input-sub::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* -------------------Portfolio page----------------- */
@@ -834,6 +827,7 @@ body {
 .modal-field {
   margin-bottom: 26px;
 }
+
 .input-title {
   font-size: 12px;
   line-height: 1.16;
@@ -847,6 +841,7 @@ body {
 .modal-user-comment {
   width: 100%;
   height: 120px;
+  background: transparent;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -854,7 +849,7 @@ body {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: rgba(117, 117, 117, 0.5);
+
   padding-top: 8px;
   padding-left: 16px;
   padding-right: 16px;
@@ -865,6 +860,13 @@ body {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-user-comment::placeholder {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: rgba(117, 117, 117, 0.5);
 }
 .modal-user-comment:focus {
   border: 1px solid var(--accent-color);
@@ -896,6 +898,13 @@ body {
   letter-spacing: 0.04em;
   color: #757575;
   display: flex;
+
+  cursor: pointer;
+}
+
+.policy-link {
+  color: var(--accent-color);
+  margin-left: 2px;
 }
 
 .policy-text span {
