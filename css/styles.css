@@ -761,6 +761,7 @@ body {
   margin-left: auto;
   cursor: pointer;
   margin-bottom: 24px;
+  padding: 0;
 
   transition-property: fill, background-color;
   transition-duration: 250ms;
@@ -785,7 +786,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-title-color);
 
-  margin-bottom: 34px;
+  margin-bottom: 16px;
 }
 
 .input-wrap {
@@ -825,7 +826,11 @@ body {
 }
 
 .modal-field {
-  margin-bottom: 26px;
+  margin-bottom: 8px;
+}
+
+.textarea {
+  margin-bottom: 16px;
 }
 
 .input-title {
@@ -835,7 +840,7 @@ body {
   color: #8e8f99;
 
   margin-bottom: 4px;
-  display: inline-block;
+  display: block;
 }
 
 .modal-user-comment {
@@ -923,4 +928,20 @@ body {
   background-color: var(--active-color);
   border: none;
   fill: #f4f4fd;
+}
+
+.input-policy {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.policy {
+  margin-bottom: 24px;
 }
